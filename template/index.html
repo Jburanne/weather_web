@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta 单标签 用来引入或声明一些内容-->
+    <meta charset="UTF-8">
+ 
+    <!--viewport 视口-->
+    <!--width 设置视口宽度-->
+    <!--user-scalable 网页是否可以被缩放-->
+    <!--initial-scale 网页被加载时，初始的比例-->
+    <!--maximum-scale 网页最大的放大比例-->
+    <!--minimum-scale 网页最小的缩放比例-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ 
+    <!--title 标题标签-->
+    <title>天气预报</title>
+   <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            /*边界看宽度默认为8,在这里初始值设为零*/
+            margin: 0;
+ 
+            /*高度100%,整个界面*/
+            height: 100%;
+ 
+            /*display: inline-block 转换为行内块元素*/
+            /*display: flex 将该标签作为弹性布局的容器*/
+            display: flex;
+ 
+            /*指定容器内的item布局方向*/
+            /*row 容器内的item按照x轴(主轴方向布局)*/
+            /*column 容器内的item按照y轴(交叉轴)方向布局*/
+            /*row-reverse 容器内的item按照x轴反向布局*/
+            /*column-reserve 容器内的item按照y轴反向布局*/
+            flex-direction: column;
+ 
+            /*文本居中*/
+            text-align: center;
+ 
+            /*设置背景颜色*/      
+          	background-color: rgb(131,175,155);
+ 
+            /*主轴项目item的布局方式*/
+            justify-content: space-between;
+ 
+            /*交叉轴的项目item布局方式*/
+            /*align-items: ;*/
+        }
+        header{
+            /*字体大小*/
+            font-size: 30px;
+        }
+        img{
+            /*width: 设置图片显示宽度，高度会自适应*/
+            width: 80px;
+        }
+        footer{
+            /*display: flex 将该标签作为弹性布局的容器*/
+            display: flex;
+            /*设置item的布局方式*/
+            justify-content: space-between;
+        }
+        footer section{
+            /*宽度占比33%*/
+            width: 33%;
+            border-right: 1px black solid;
+        }
+    </style>
+</head>
+ 
+<!--body 标记网页主题信息-->
+<body>
+ 
+    <!--header 网页中的头部内容-->
+    <header>郑州市</header>
+ 
+    <!--main 块元素 标记网页中的主要内容-->
+    <main>
+        <!--img 标记网页中的图片-->
+        <!--src source 图片来源-->
+        <!--alt alter 当图片未被加载出来时，以文本方式代替图片显示-->
+        <!--title 当鼠标停留在图片上时，展示的文本-->
+        <img src="../assets/biz_plugin_weather_baoxue.png" alt="qing.png">
+        <!--h1~h6 标题标签, 标签独自占一行空间，称之为块元素-->
+        <h2>27~32℃</h2>
+        <h3>晴转多云</h3>
+        <!--p标签，用来标记网页中的段落内容！-->
+        <p>东风微风</p>
+        <p>实时温度: 32℃,空气质量指数65,良</p>
+    </main>
+ 
+    <!--footer 网页中的尾部内容-->
+    <footer>
+        <!--section 组件、模块, 块元素-->
+        <section>
+            <p>周三</p>
+            <p>27~30℃</p>
+            <img src="../assets/biz_plugin_weather_baoxue.png" alt="">
+            <p>阴转小雨</p>
+            <p>南风微风</p>
+        </section>
+        <section>
+            <p>周三</p>
+            <p>27~30℃</p>
+            <img src="../assets/biz_plugin_weather_baoxue.png" alt="">
+            <p>阴转小雨</p>
+            <p>南风微风</p>
+        </section>
+        <section>
+            <p>周三</p>
+            <p>27~30℃</p>
+            <img src="../assets/biz_plugin_weather_baoxue.png" alt="">
+            <p>阴转小雨</p>
+            <p>南风微风</p>
+        </section>
+    </footer>
+  <script src="/static/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
